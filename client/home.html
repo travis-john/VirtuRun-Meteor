@@ -1,0 +1,39 @@
+<template name="home">
+
+<img class="homeimage" src="img/Treadmill.jpg">
+<div class="homeinfo">
+    
+<h1>Welcome to Virtual Runner!</h1> 
+<p>This is an application to make your time on the dreadmill a little more tolerable! We know you'd rather be outside, but, sometimes, it's not possible, so we've brought the trails to you!</p> <p>This application allows you to input the spped at which you want to work out and plays back a video of your chosen route </p>
+    
+    <a href="/signup"><button class="btn btn-primary btn-large">Sign Up</button></a>
+    <a href="/login"><button class="btn btn-primary btn-large">Login</button></a>
+    
+    {{> loginButtons }}
+    
+</div>
+    
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container">
+      <div class="col-md-3 col-sm-3 col-xs-3">
+          <a href="/"><button type="button" class="btn btn-default" aria-label="Center Align">
+      <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+      </button></a>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-3">
+          <a href="/options"><button type="button" class="btn btn-default" aria-label="Center Align">
+      <span class="glyphicon glyphicon-road" aria-hidden="true"></span>
+      </button></a>
+      </div><div class="col-md-3 col-sm-3 col-xs-3">
+          <a href="/races"><button type="button" class="btn btn-default" aria-label="Center Align">
+      <span class="glyphicon glyphicon-flag" aria-hidden="true"></span>
+      </button></a>
+      </div><div class="col-md-3 col-sm-3 col-xs-3">
+          <a href="/profile"><button type="button" class="btn btn-default" aria-label="Center Align">
+      <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+      </button></a>
+      </div>
+      
+  </div>
+</nav> 
+</template>

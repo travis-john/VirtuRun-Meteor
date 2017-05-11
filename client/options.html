@@ -1,0 +1,180 @@
+<template name="options">
+
+{{#if currentUser}}
+    <!--        Begin 1st Options Row-->
+    <div class="container" id="top">
+    <div class="row optionsrow">
+        <div class="col-md-4 col-sm-12 col-xs-12">
+        <img class="img-responsive" src="img/trail1-1.png">
+        <p>A paved trail circling Guilford Courthouse National Military Park in Greensboro, NC</p> 
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#trailmodal1">Details</button>    
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+        <img class="img-responsive" src="img/trail2-1.png">
+        <p>A hilly paved path encircling the lake in Greensboro, N.C.'s Country Park</p> 
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#trailmodal2">Details</button>    
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+        <img class="img-responsive" src="img/trail3-1.png">
+        <p>A paved loop going through Forest Lawn Cemetery and Country Park.</p> 
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#trailmodal3">Details</button>    
+        </div>
+    </div>        
+    </div>
+<!--        End First Options Row-->
+        
+<!--        Begin Second Options Row-->
+        <div class="container" id="second">
+    <div class="row optionsrow">
+        <div class="col-md-4 col-sm-12 col-xs-12">
+        <img class="img-responsive" src="img/trail1.jpg">
+        <p>A 1 mile loop circling art installations at the North Carolina Museum of Art in Raleigh, NC</p> 
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Details</button>    
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+        <img class="img-responsive" src="img/trail2.jpg">
+        <p>A 4mi path beginning at the NC Museum of Art and finishing on Hillsborough Street.</p> 
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Details</button>    
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+        <img class="img-responsive" src="img/trail3.JPG">
+        <p>A 6mi route along the Capitol Greenway. Ends at N.C. State.</p> 
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Details</button>    
+        </div>
+    </div>        
+    </div>
+<!--        End Second Options Row-->
+        
+<!--        Begin Third Options Row-->
+        <div class="container" id="third">
+    <div class="row optionsrow">
+        <div class="col-md-4 col-sm-12 col-xs-12">
+        <img class="img-responsive" src="img/trail4.jpg">
+        <p>Run along Merritt Creek trail, circling Merritt's Pasture</p> 
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Details</button>    
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+        <img class="img-responsive" src="img/trail5.JPG">
+        <p>Begin on Cotton St in Chapel Hill, NC and finish in Umstead Park</p> 
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Details</button>    
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+        <img class="img-responsive" src="img/trail6.jpg">
+        <p>Run through a mix of urban and park areas as you run along Bolin Creek in Chapel Hill</p> 
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Details</button>    
+        </div>
+    </div>        
+    </div>
+<!--        End Third Options Row-->
+        
+<!-- First Modal -->
+<div id="trailmodal1" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Guilford Courthouse Loop: 1.8mi</h4>
+      </div>
+      <div class="modal-body">
+        <video controls id="trail1" src="video/trail1-1.mp4"></video>
+        <p>On March 15, 1781. the largest, most hotly-contested battle of the Revolutionary War's Southern Campaign was fought at the small North Carolina backcounty hamlet of Guilford Courthouse.</p>
+        <p>Guilford Courthouse proved to be the highwater mark of British military operations in the Revolutionary War. Weakened in his campaign against Greene, Cornwallis abandoned the Carolinas hoping for success in Virginia. At Yorktown, seven months after his victory at Guilford Courthouse, Lord Cornwallis would surrender to the combined American and French forces under General George Washington.</p>
+        <p>This route will take you along a path circling where the battle was fought. Experience the nearly untouched area where the tide of the American Revolution was turned</p>
+        <form>
+        <input name="trail1speed" type="number" placeholder="Input Speed (mph)">
+        </form>
+        <button class="btn btn-info btn-large" id="runtrail1">Run</button>  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>    
+    
+<!--    Second Modal-->
+    <div id="trailmodal2" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Country Park Loop: 1.6mi</h4>
+      </div>
+      <div class="modal-body">
+        <video controls id="trail2" src="video/trail2.mp4"></video>
+        <p>Country Park is located in the heart of Greensboro, North Carolina, adjacent to the Guilford Courthouse National Military Park and the Greensboro Science Center.</p>
+        <p>A paved road surrounds the central lake. It is a favorite of cyclists, walkers, and, of course, runners.</p>
+        <p>Experience the park on a  beautiful Saturday afternoon as you run the paved path populated people enjoying the sunshine.</p>
+        <form>
+        <input name="trail2speed" type="number" placeholder="Input Speed (mph)">
+        </form>
+        <button class="btn btn-info btn-large" id="runtrail2">Run</button>  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+    
+<!--    Third Modal-->
+    <div id="trailmodal3" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Forest Lawn Loop: 3.12mi</h4>
+      </div>
+      <div class="modal-body">
+        <video controls id="trail1" src="video/trail3.mp4"></video>
+        <p>Forest Lawn Cemetery opened in 1928 and is the largest municipal cemetery in Greensboro, covering 70 acres.</p>
+        <p>The cemetery is located adjacent to Country Park and Guilford Courthouse National Military Park.</p>
+        <p>Experience the cemetary and Country Park on a beautiful day as you run through the cemetery into Country Park and finish at the cemetery's entrance.</p>
+        <form>
+        <input name="trail3speed" type="number" placeholder="Input Speed (mph)">
+        </form>
+        <button class="btn btn-info btn-large" id="runtrail3">Run</button>  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>    
+{{/if}}
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container">
+      <div class="col-md-3 col-sm-3 col-xs-3">
+          <a href="/"><button type="button" class="btn btn-default" aria-label="Center Align">
+      <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+      </button></a>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-3">
+          <a href="/options"><button type="button" class="btn btn-default" aria-label="Center Align">
+      <span class="glyphicon glyphicon-road" aria-hidden="true"></span>
+      </button></a>
+      </div><div class="col-md-3 col-sm-3 col-xs-3">
+          <a href="/races"><button type="button" class="btn btn-default" aria-label="Center Align">
+      <span class="glyphicon glyphicon-flag" aria-hidden="true"></span>
+      </button></a>
+      </div><div class="col-md-3 col-sm-3 col-xs-3">
+          <a href="/profile"><button type="button" class="btn btn-default" aria-label="Center Align">
+      <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+      </button></a>
+      </div>
+      
+  </div>
+</nav> 
+
+    <script src="js/options.js"></script>
+    
+</template>

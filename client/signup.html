@@ -1,0 +1,71 @@
+ <template name="signup">
+  <div class="container backgrounddefault">
+    <div class="col-xs-12 col-sm-6 col-md-4" id="form">
+      <h4 class="page-header">Sign Up</h4>
+      <form id="signup" class="signup">
+        <div class="row">
+          <div class="col-xs-6">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" class="form-control" placeholder="First Name">
+            </div>
+          </div>
+          <div class="col-xs-6">
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" class="form-control" placeholder="Last Name">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="ocation">Location</label>
+          <div class="input-group location">
+            <input type="text" class="form-control" id="location" placeholder="Location">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="emailAddress">Email Address</label>
+          <input type="email" class="form-control" id="emailAddress" placeholder="Email Address">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+        </div>
+          <div class="form-group">
+          <label for="passwordconfirm">Confirm Password</label>
+          <input type="password" id="password2" class="form-control" placeholder="Confirm Password">
+        </div>
+        <div class="form-group">
+          <input type="submit" id="submit" class="btn btn-success" value="Sign Up">
+        </div>
+      </form>
+      <p>Already have an account? <a href="/login">Log In</a>.</p>
+    </div>
+      
+      <img src="img/treadmill-workouts-for-anyone-main_0.jpg">
+  </div>
+     
+     <nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container">
+      <div class="col-md-3 col-sm-3 col-xs-3">
+          <a href="/"><button type="button" class="btn btn-default" aria-label="Center Align">
+      <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+      </button></a>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-3">
+          <a href="/options"><button type="button" class="btn btn-default" aria-label="Center Align">
+      <span class="glyphicon glyphicon-road" aria-hidden="true"></span>
+      </button></a>
+      </div><div class="col-md-3 col-sm-3 col-xs-3">
+          <a href="/races"><button type="button" class="btn btn-default" aria-label="Center Align">
+      <span class="glyphicon glyphicon-flag" aria-hidden="true"></span>
+      </button></a>
+      </div><div class="col-md-3 col-sm-3 col-xs-3">
+          <a href="/profile"><button type="button" class="btn btn-default" aria-label="Center Align">
+      <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+      </button></a>
+      </div>
+      
+  </div>
+</nav> 
+</template>
