@@ -130,3 +130,13 @@ video {
     float: left;
 }
 
+.userprofile ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.userprofile li {
+    display: inline-block;
+    font-size: 18px;
+}
+
