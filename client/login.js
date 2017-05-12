@@ -1,8 +1,8 @@
 Template.login.events({
     'click #login': function(e, t) {
         e.preventDefault();
-        var email = $('#login-email').val(),
-            password = $('#login-password').val();
+        var email = $('#emailAddress').val(),
+            password = $('#password').val();
 
         Meteor.loginWithPassword(email, password, function(error) {
             if (error) {
@@ -14,7 +14,7 @@ Template.login.events({
                     type: "error"
                 });
             } else {
-                FlowRouter.go('/');
+                FlowRouter.go('/homesignout');
             }
         });
         return false;

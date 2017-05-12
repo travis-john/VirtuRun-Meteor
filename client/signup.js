@@ -5,6 +5,7 @@ Template.signup.events({
         var email = $('#emailAddress').val(),
             firstName = $('#firstName').val(),
             lastName = $('#lastName').val(),
+            location = $('#location').val(),
             password = $('#password').val(),
             passwordAgain = $('#password2').val();
 
@@ -56,7 +57,7 @@ Template.signup.events({
                     type: "error"
                 });
                 } else {
-                    FlowRouter.go('/');
+                    FlowRouter.go('/homesignout');
                 }
             });
         }

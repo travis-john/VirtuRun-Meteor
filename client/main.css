@@ -82,25 +82,43 @@ video {
 .raceseries {
     list-style: none;
     padding-left: 0;
-    border: 1px solid red;
+/*    border: 1px solid red;*/
     width: 100%;
-    display: inline-block;
+    
+}
+
+.raceseries li{
+   float: left;
+    max-width: 25%;
+    border: 1px solid red;
 }
 
 /*
-.raceseries ul {
-    display: inline-block;
-}
-*/
-
 .raceseries img {
     max-width: 25%;
 }
+*/
 
 .backgrounddefault {
     background-color: white;
     margin-top: 100px;
     padding: 10px;
+}
+
+.optionsdefault {
+    background-color: white;
+    margin-top: 100px;
+    padding: 10px;
+}
+
+.backgrounddefault img {
+    max-width: 55%;
+    margin-left: 100px;
+}
+
+.optionsdefault img {
+    max-width: 100%;
+    margin-left: 100px;
 }
 
 .favorites {
@@ -112,7 +130,3 @@ video {
     float: left;
 }
 
-.backgrounddefault img {
-    max-width: 55%;
-    margin-left: 100px;
-}
