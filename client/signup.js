@@ -9,12 +9,6 @@ Template.signup.events({
             password = $('#password').val(),
             passwordAgain = $('#password2').val();
 
-//         weight = $('#weight').val(),
-//
-//         height = $('#height').val(),
-//                   age = $('#age').val(),
-//               sex = $('#sex').val();
-
         // Trim Helper
         var trimInput = function(val) {
             return val.replace(/^\s*|\s*$/g, "");
@@ -44,10 +38,6 @@ Template.signup.events({
                 lastName: lastName,
                 password: password,
                 location: location
-//                height: height,
-//                age: age,
-//                weight: weight,
-//                sex: sex
             }, function(error) {
                 if (error) {
                     return swal({

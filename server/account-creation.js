@@ -7,11 +7,6 @@ Accounts.onCreateUser(function(options, user) {
     user.profile.lastName = options.lastName;
     user.profile.location = options.location;
     
-
-//    user.profile.weight = options.weight;
-//    user.profile.age = options.age;
-//    user.profile.height = options.height;
-//    user.profile.sex = options.sex;
     
     // Basic Prof Picture Setup
     //user.profile.profPicture = Meteor.absoluteUrl() + "img/default/user.jpg";
