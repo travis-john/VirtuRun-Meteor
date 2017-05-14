@@ -10,6 +10,11 @@ body {
     z-index: 1;
 }
 
+.navigation {
+    margin: 0 auto;
+    text-align: center;
+}
+
 .homeinfo {
     height: 100vh;
     width: 38vw;
@@ -275,7 +280,17 @@ ul {
     }
     
     #img {
+        margin: 0 auto;
         float: none;
+    }
+    
+    #img img {
+        max-width: 100%;
+    }
+    
+    #profile {
+        margin: 0 auto;
+        text-align: center;
     }
     
 } 
