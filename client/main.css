@@ -2,6 +2,7 @@
 
 body {
     background-color: rgb(44,62,80);
+    font-family: 'Lato', sans-serif;
 }
 
 .homeimage {
@@ -37,7 +38,7 @@ body {
 .optionsrow {
     background: white;
     padding: 10px;
-    height: 275px;
+    height: 290px;
     top: 50px;
 }
 
@@ -75,8 +76,24 @@ video {
     padding: 15px;
 }
 
+#racethebar {
+    background-color: white;
+    margin-top: 20px;
+    padding: 15px;
+    margin-bottom: 100px;
+}
+
+#grs {
+    margin-top: 200px;
+}
+
 #grsinfo h1{
     margin-left: 200px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 800;
 }
 
 .raceseries {
@@ -90,14 +107,11 @@ video {
 .raceseries li{
    float: left;
     max-width: 25%;
-    border: 1px solid red;
 }
 
-/*
 .raceseries img {
-    max-width: 25%;
+    max-width: 75%;
 }
-*/
 
 .backgrounddefault {
     background-color: white;
@@ -116,6 +130,24 @@ video {
     margin-left: 100px;
 }
 
+.profiledefault {
+    background-color: white;
+    margin-top: 100px;
+    padding: 10px;
+}
+
+.profiledefault img {
+    width: 100%;
+/*
+    margin-left: 50px;
+    margin-top: 20px;
+*/
+}
+
+.profiledefault input {
+    margin-top: 10px;
+}
+
 .optionsdefault img {
     max-width: 100%;
     margin-left: 100px;
@@ -130,7 +162,13 @@ video {
     float: left;
 }
 
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
 .userprofile ul {
+    width: 100%;
     list-style: none;
     padding: 0px;
 }
@@ -139,4 +177,106 @@ video {
     display: inline-block;
     font-size: 18px;
 }
+
+.dropdown-menu {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#img {
+    width: 33.33%;
+    float: left;
+}
+
+#profilesignout {
+    margin-left: 325px;
+}
+
+@media all and (max-width: 768px) {
+    
+    .homeinfo {
+        width: 45vw;
+    }
+    
+    .optionsrow {
+       height: 1500px;
+    }
+    
+    .optionsrow p {
+        font-size: 18px;
+    }
+    
+    .option {
+        margin-top: 20px;
+    }
+    
+    video {
+        width: 575px;
+        height: 426px;
+    }
+    
+    .modal-body p {
+        font-size: 16px;
+    }
+    
+    .modal-body button {
+        margin-top: 10px;
+    }
+    
+    #profilecontainer1 p {
+        font-size: 18px;
+    }
+    
+    #profilecontainer1 h1 {
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 5px;
+    }
+    
+    .raceseries {
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    #grs {
+        margin: 0 auto;
+        text-align: center;
+/*        margin-top: 15px;*/
+    }
+    
+    #racethebar img{
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    #racethebar h1 {
+        text-align: center;
+    }
+    
+    .profiledefault {
+        margin-top: 25px;
+    }
+    
+    .profiledefault img {
+        max-width: 65%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    #userimg {
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    #favorites {
+        margin: 0 auto;
+        text-align: center;
+        margin-left: -150px;
+    }
+    
+    #img {
+        float: none;
+    }
+    
+} 
 

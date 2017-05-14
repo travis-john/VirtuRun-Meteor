@@ -6,6 +6,7 @@ Template.signup.events({
             firstName = $('#firstName').val(),
             lastName = $('#lastName').val(),
             location = $('#location').val(),
+            weight = $('#weight').val(),
             password = $('#password').val(),
             passwordAgain = $('#password2').val();
 
@@ -37,7 +38,8 @@ Template.signup.events({
                 firstName: firstName,
                 lastName: lastName,
                 password: password,
-                location: location
+                location: location,
+                weight: weight
             }, function(error) {
                 if (error) {
                     return swal({

@@ -6,6 +6,7 @@ Accounts.onCreateUser(function(options, user) {
     user.profile.firstName = options.firstName;
     user.profile.lastName = options.lastName;
     user.profile.location = options.location;
+    user.profile.sex = options.weight;
     
     
     // Basic Prof Picture Setup

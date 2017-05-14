@@ -1,9 +1,11 @@
 <template name="races">
-
-    <div class="container" id="profilecontainer1">
     
-    <div class="col-md-4">
-    <img class="img-reponsive" src="img/grs-logo.png">    
+    {{#if currentUser}}
+
+    <div class="container-fluid" id="profilecontainer1">
+    
+    <div class="col-md-4" id="grs">
+    <img class="img-reponsive" id="grs" src="img/grs-logo.png">    
     </div>
     
     <div class="col-md-8">
@@ -11,15 +13,59 @@
     <h1>Greensboro Race Series</h1>
     <p>The Greensboro Race Series sponsored by Omega Sports is a collection of the best area races. Series award winners will receive prize packages as well as be invited to the end of year awards banquet.</p> 
     <ul class="raceseries">
-    <li><a href="https://runsignup.com/Race/NC/Greensboro/WagginWild5k" target="_blank"><img src="img/waggin-wild-5k.png"></a></li>
-    <li><a href="https://runsignup.com/Race/NC/Greensboro/OldTownBeerun" target="_blank"><img src="img/Old-Town-Beerun.png"></a></li>    
-    
+    <li><a href="https://runsignup.com/Race/NC/Greensboro/WagginWild5k" target="_blank"><img src="img/races/waggin-wild-5k.png"></a></li>
+    <li><a href="https://runsignup.com/Race/NC/Greensboro/OldTownBeerun" target="_blank"><img src="img/races/Old-Town-Beerun.png"></a></li>
+    <li><a href="https://runsignup.com/Race/NC/WinstonSalem/CamelCityRacefest" target="_blank"><img src=img/races/hop-swap-half.jpg></a></li>
+    <li><a href="https://runsignup.com/Race/NC/Greensboro/BengalDash" target="_blank"><img src=img/races/Bengal-Dash-5k.png></a></li>    
     </ul>    
     
+    <ul class="raceseries">
+    <li><a href="https://runsignup.com/Race/NC/Greensboro/OwlsRoostRumble" target="_blank"><img src="img/races/owls-roost-rumble.png"></a></li>
+    <li><a href="https://runsignup.com/Race/NC/Greensboro/PTIRun" target="_blank"><img src="img/races/pti-run-on-the-runway.png"></a></li>
+    <li><a href="https://runsignup.com/Race/NC/Greensboro/FunFourthFreedomRun" target="_blank"><img src=img/races/fun-fourth-10k.jpg></a></li>
+    <li><a href="https://runsignup.com/Race/NC/Kernersville/4thofJuly5k" target="_blank"><img src=img/races/Kernersville-4th-of-July-5k.png></a></li>    
+    </ul> 
+        
+    <ul class="raceseries">
+    <li><a href="https://runsignup.com/Race/NC/Greensboro/Kirkwood5kRun" target="_blank"><img src="img/races/kirkwood-5k.png"></a></li>
+    <li><a href="https://runsignup.com/Race/NC/Greensboro/CannonballRun" target="_blank"><img src="img/races/cannonball-run.png"></a></li>
+    <li><a href="https://runsignup.com/Race/NC/Greensboro/TripleLakesTrailHalfMarathonMarathon40Miler" target="_blank"><img src=img/races/triple-lakes-trail-race.png></a></li>
+    <li><a href="https://runsignup.com/Race/NC/Greensboro/GreensboroGobbler" target="_blank"><img src=img/races/greensboro-gobbler.png></a></li>    
+    </ul>     
+        
     </div>    
     
     
     </div>
+    
+    <div class="container-fluid" id="racethebar">
+    
+    
+    <div class="col-md-4">
+        
+    <img class="img-responsive"  src="img/races/url.jpg">    
+    </div>
+        
+       <div class="col-md-8">
+    
+    <h1>Race the Bar Series</h1>
+    <p>The Race the Bar series organized by Trivium Racing. It begins in March and goes through the early fall. Events are hosted by local breweries and focus on Greensboro's unique beer culture and neighborhoods. Awards are given out to runners who place in the overall standings as well as in their age-groups. Points are awarded and accumulated based on place and increase as the runners participate in more races in the series. A banquet recognizing the series winners is held in January.</p>
+           
+           <ul class="raceseries">
+           
+           <li><a href="https://runsignup.com/Race/NC/Greensboro/RTBPigPounder" target="_blank"><img src="img/races/pp.jpg"></a></li>
+            <li><a href="https://runsignup.com/Race/NC/Greensboro/RTB8k" target="_blank"><img src="img/races/LPFS.png"></a></li>
+            <li><a href="https://runsignup.com/Race/NC/Greensboro/GrowlerGSO" target="_blank"><img src="img/races/gibbs.jpeg"></a></li> 
+            <li><a href="http://triviumracing.com/event/race-bar-5-mile-10-mile/" target="_blank"><img src="img/races/preyer.png"></a></li>   
+           
+           </ul>
+           
+        </div>
+    
+    
+    </div>
+    
+    {{/if}}
 
 <nav class="navbar navbar-default navbar-fixed-bottom">
   <div class="container">
