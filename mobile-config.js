@@ -1,0 +1,18 @@
+App.accessRule('http://localhost:*');
+App.accessRule('http://www.runsignup.com', {type: 'navigation'});
+App.accessRule('https://runsignup.com/Race/NC/Greensboro/WagginWild5k', {type: 'navigation'});
+App.accessRule('https://runsignup.com/Race/NC/Greensboro/OldTownBeerun', {type: 'navigation'});
+App.accessRule('https://runsignup.com/Race/NC/WinstonSalem/CamelCityRacefest', {type: 'navigation'});
+App.accessRule('https://runsignup.com/Race/NC/Greensboro/BengalDash', {type: 'navigation'});
+App.accessRule('https://runsignup.com/Race/NC/Greensboro/OwlsRoostRumble', {type: 'navigation'});
+App.accessRule('https://runsignup.com/Race/NC/Greensboro/PTIRun', {type: 'navigation'});
+App.accessRule('https://runsignup.com/Race/NC/Greensboro/FunFourthFreedomRun', {type: 'navigation'});
+App.accessRule('https://runsignup.com/Race/NC/Kernersville/4thofJuly5k', {type: 'navigation'});
+App.accessRule('https://runsignup.com/Race/NC/Greensboro/Kirkwood5kRun', {type: 'navigation'});
+App.accessRule('https://runsignup.com/Race/NC/Greensboro/CannonballRun', {type: 'navigation'});
+App.accessRule('https://runsignup.com/Race/NC/Greensboro/TripleLakesTrailHalfMarathonMarathon40Miler', {type: 'navigation'});
+App.accessRule('https://runsignup.com/Race/NC/Greensboro/GreensboroGobbler', {type: 'navigation'});
+App.accessRule('https://runsignup.com/Race/NC/Greensboro/RTBPigPounder', {type: 'navigation'});
+App.accessRule('https://runsignup.com/Race/NC/Greensboro/RTB8k', {type: 'navigation'});
+App.accessRule('https://runsignup.com/Race/NC/Greensboro/GrowlerGSO', {type: 'navigation'});
+App.accessRule('http://triviumracing.com/event/race-bar-5-mile-10-mile/', {type: 'navigation'});
